@@ -1,12 +1,25 @@
+# Ignore everything
 *
 
-# Don't ignore directories
-!*/
 
+# But don't ignore .gitignore itself
 !.gitignore
-!nvim/*
-!hypr/*
-!fish/*
-!ghostty/*
+
+# Don't ignore these directories
+!nvim/
+!hypr/
+!fish/
+!ghostty/
 !wofi*
-!waybar/*
+!waybar/
+
+# And don't ignore everything *inside* those directories
+!nvim/**
+!hypr/**
+!fish/**
+!ghostty/**
+!wofi**/
+!waybar/**
+
+# Except lazy-lock
+nvim/lazy-lock.json

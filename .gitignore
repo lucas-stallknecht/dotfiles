@@ -1,0 +1,12 @@
+*
+
+# Don't ignore directories
+!*/
+
+!.gitignore
+!nvim/*
+!hypr/*
+!fish/*
+!ghostty/*
+!wofi*
+!waybar/*

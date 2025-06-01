@@ -18,6 +18,16 @@ return {
             require('lspconfig').lua_ls.setup({
             })
             require('lspconfig').clangd.setup({
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy",
+                    "--header-insertion=iwyu",
+                    "--completion-style=detailed",
+                    "--function-arg-placeholders=false",
+                    "--fallback-style=llvm",
+                    "--enable-config",
+                },
                 capabilities = {
                     {
                         offsetEncoding = { "utf-8", "utf-16" },

@@ -29,7 +29,7 @@ vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 
 -- So I don't become crazy while writting C
-vim.keymap.set({ "i" }, "<S-Space>", "_");
+vim.keymap.set({ "i" }, "<S-Space>", "_")
 
 vim.api.nvim_set_keymap('n', '<leader>ig', ':lua InsertHeaderGuard()<CR>',
     { noremap = true, silent = true, desc = "[I]nclude Header [G]uard" })

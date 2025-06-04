@@ -1,6 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- Open explorer
 vim.keymap.set("n", "<leader>x", vim.cmd.Ex, { desc = '[X]plorer' })
 
@@ -29,6 +26,7 @@ vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 
 -- So I don't become crazy while writting C
+-- Update : does not work with french qwerty
 vim.keymap.set({ "i" }, "<S-Space>", "_")
 
 vim.api.nvim_set_keymap('n', '<leader>ig', ':lua InsertHeaderGuard()<CR>',

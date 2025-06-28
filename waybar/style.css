@@ -59,14 +59,14 @@ button:hover {
 
 #workspaces button.focused {
   /*    box-shadow: inset 0 -2px #c9545d; */
-  background-color: #161616;
+  background-color: #090909;
   color:#3b3b3b;
   border-top: 2px solid #cccccc;
 }
 
 #workspaces button.active {
   /*    box-shadow: inset 0 -2px #c9545d; */
-  background-color: #161616;
+  background-color: #090909;
   color: #ffffff;
   opacity: 0.95;
   border-top: 2px solid #cccccc;

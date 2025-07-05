@@ -19,6 +19,12 @@ return {
         require('telescope').setup {
             defaults = {
                 preview = false,
+                border = false,
+                layout_strategy = 'horizontal', -- or 'vertical', 'center', etc.
+                layout_config = {
+                    width = 0.6,  -- 60% of the editor width
+                    height = 0.4, -- 40% of the editor height
+                },
                 file_ignore_patterns = { 'node_modules', 'build', 'third_party' },
             },
             -- pickers = {}

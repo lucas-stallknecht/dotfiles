@@ -16,17 +16,10 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<leader><tab>', '<cmd>e#<CR>', { desc = 'Open last [Tab]' })
 
 -- Move line
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+-- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Paste from clipboard even if something has been yanked before
-vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
-
--- Yank to system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-
--- So I don't become crazy while writting C
--- Update : does not work with french qwerty
+-- /!\ : does not work with french qwerty
 vim.keymap.set({ "i" }, "<S-Space>", "_")
 
 vim.api.nvim_set_keymap('n', '<leader>ig', ':lua InsertHeaderGuard()<CR>',
@@ -50,3 +43,6 @@ function InsertHeaderGuard()
         "#endif // " .. guard
     })
 end
+
+-- Open theme picker
+vim.keymap.set("n", "<leader>ct", "<cmd>lua require'theming.theme_picker'.open_picker()<cr>", { desc = "[C]hange [T]heme"})

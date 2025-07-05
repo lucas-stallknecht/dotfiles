@@ -76,8 +76,8 @@ return {
                         map('<leader>f', vim.lsp.buf.format, '[F]ormat buffer')
                     end
 
-                    -- map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ctions')
-                    -- map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+                    map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ctions')
+                    map('<leader>r', vim.lsp.buf.rename, '[R]e[n]ame')
                 end,
             })
         end,

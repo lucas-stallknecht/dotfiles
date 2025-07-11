@@ -1,0 +1,96 @@
+@define-color dark #090909;
+@define-color medium #1a1a1a;
+@define-color light #999999;
+
+* {
+  all: unset;
+  font-family: "Noto Sans CJK KR Regular";
+  font-size: 16px;
+  outline: none;
+  border: none;
+  text-shadow: none;
+  background-color: transparent;
+}
+
+window {
+  all: unset;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.5px solid @light;
+  background-color: @dark;
+}
+
+#input {
+  all: unset;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  color: #f8f8f2;
+  background-color: @medium;
+  border-radius: 5px;
+}
+
+#input image {
+  border: none;
+  color: @light; /* Adjust if needed */
+  padding-right: 10px;
+}
+
+#input * {
+  border: none;
+  outline: none;
+}
+
+#input:focus {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+#inner-box {
+  margin: 2px;
+  padding: 5px;
+  border: none;
+  background-color: @dark;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: @dark;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  margin-left: 20px;
+  border: none;
+  color: #cccccc;
+  outline: none;
+}
+
+#entry {
+  border: none;
+  margin: 5px;
+  padding: 10px;
+}
+
+#entry.activatable #text {
+  color: @dark;
+}
+
+#entry > * {
+  color: #f8f8f2;
+
+}
+
+#entry:selected #text {
+  color: #ebbcba;
+  font-weight: bold;
+}

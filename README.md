@@ -16,10 +16,9 @@ makepkg -si
 
 ## Apply
 ```bash
-yay -S clang cmake fish hyprshot-gui-git less lua-language-server materiak-gtk-theme nemo neovim nwg-look pavucontrol pulseaudio ripgrep swww tldr tree ttf-fira-code-nerd unzip waybar wl-clipboard wofi xkb-qwerty-fr zip librewolf-bin
+yay -S clang cmake fish hyprshot-gui-git less lua-language-server materia-gtk-theme nemo neovim nwg-look pavucontrol pulseaudio ripgrep swww tldr tree ttf-firacode-nerd unzip waybar wl-clipboard wofi xkb-qwerty-fr zip librewolf-bin
 ```
 
-- Kitty theme : Arthur, using `kitten`
 - GTK theme : Materia `nwg-look`
 - Monitor default : `, preferred, auto, 1`
-- Make fish the default shell : `sudo chsh -s /usr/bin/fish`
+- Make fish the default shell : `chsh -s /usr/bin/fish`

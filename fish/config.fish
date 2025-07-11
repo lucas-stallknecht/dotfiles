@@ -8,7 +8,7 @@ function fish_prompt
 
     # Get the current directory, then extract the last word
     set dir (basename (pwd))
-    set_color '#dd8282'
+    set_color '#ebbcba'
     echo -n $dir
 
     # Reset color and add space before command input

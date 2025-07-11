@@ -10,7 +10,7 @@
 !hypr/
 !fish/
 !ghostty/
-!wofi*
+!wofi/
 !waybar/
 
 # And don't ignore everything *inside* those directories
@@ -18,7 +18,7 @@
 !hypr/**
 !fish/**
 !ghostty/**
-!wofi**/
+!wofi/**
 !waybar/**
 
 # Except lazy-lock

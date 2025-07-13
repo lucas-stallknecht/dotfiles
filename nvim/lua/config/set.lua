@@ -31,5 +31,8 @@ vim.opt.inccommand = 'split'
 
 vim.opt.cursorline = true
 
-vim.opt.scrolloff = 8
-vim.opt.colorcolumn = '80'
+vim.opt.scrolloff = 10
+vim.opt.colorcolumn = '90'
+
+-- Maximum number of items for pop-outs
+vim.o.pumheight = 6

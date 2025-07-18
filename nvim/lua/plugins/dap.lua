@@ -49,7 +49,7 @@ return {
             end)
 
             vim.keymap.set("n", "<leader>dr", dap.continue, { desc = "[D]ap [R]un" })
-            vim.keymap.set("n", "<leader>ds", dap.stop, { desc = "[D]ap [S]top" })
+            vim.keymap.set("n", "<leader>ds", dap.close, { desc = "[D]ap [S]top" })
 
             vim.keymap.set("n", "<Right>", dap.step_over, { desc = "Step over" })
             vim.keymap.set("n", "<Down>", dap.step_into, { desc = "Step into" })

@@ -1,7 +1,6 @@
 # Ignore everything
 *
 
-
 # But don't ignore .gitignore itself
 !.gitignore
 
@@ -16,7 +15,6 @@
 # And don't ignore everything *inside* those directories
 !nvim/**
 !hypr/**
-!fish/**
 !ghostty/**
 !wofi/**
 !waybar/**

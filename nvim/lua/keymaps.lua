@@ -18,6 +18,7 @@ vim.keymap.set("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<c
 
 -- LSP related keymaps
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
+vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { desc = "[T]ype definition" })
 vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, { desc = "[R]ename Symbol" })
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "[F]ormat buffer" })
 

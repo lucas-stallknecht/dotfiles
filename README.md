@@ -16,7 +16,7 @@ makepkg -si
 
 ## Apply
 ```bash
-yay -S clang cmake hyprshot-gui-git less lua-language-server materia-gtk-theme nemo neovim nwg-look pavucontrol pulseaudio ripgrep swww tldr tree ttf-firacode-nerd unzip waybar wl-clipboard wofi xkb-qwerty-fr zip librewolf-bin zsh-syntax-highlighting git-prompt.zsh zed
+yay -S clang cmake hyprshot-gui-git less lua-language-server materia-gtk-theme nemo neovim nwg-look pavucontrol pulseaudio ripgrep swww tldr tree ttf-firacode-nerd unzip waybar wl-clipboard wofi xkb-qwerty-fr zip librewolf-bin zsh-syntax-highlighting git-prompt.zsh zed tree-sitter-cli ols odin-fmt
 ```
 
 - GTK theme : Materia `nwg-look`

@@ -1,9 +1,9 @@
 vim.lsp.enable({
-	"lua_ls",
+	"lua-language-server",
 	"ols",
 })
 
-vim.lsp.config("lua_ls", {
+vim.lsp.config("lua-language-server", {
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -11,4 +11,3 @@ vim.lsp.config("lua_ls", {
 		}
 	}
 })
-vim.lsp.config("ols", { init_options = {} })

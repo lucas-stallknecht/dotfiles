@@ -137,8 +137,8 @@ gruvbox.setup({
 	contrast = "", -- can be "hard", "soft" or empty string
 	palette_overrides = {},
 	overrides = {
-        Search = {bg = "#a89984", fg = "#282828" },
-        IncSearch = {bg = "#ebdbb2", fg = "#282828"},
+		Search = { bg = "#a89984", fg = "#282828" },
+		IncSearch = { bg = "#ebdbb2", fg = "#282828" },
 	},
 	dim_inactive = false,
 	transparent_mode = true,
@@ -150,3 +150,14 @@ vim.pack.add({
 })
 require("oil").setup({})
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- Additionnal parsers
+vim.pack.add({
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter"}
+})
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "odin" },
+  callback = function()
+    vim.treesitter.start()
+  end,
+})
